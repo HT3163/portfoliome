@@ -8,8 +8,8 @@ const s = document.querySelector('.sunget');
 var flag = false;
 
 
-var a = document.getElementsByClassName('skillphoto');
-var b = document.getElementsByClassName('dot');
+var a = document.querySelectorAll('.skillphoto');
+var b = document.querySelectorAll('.dot');
 
 
 
