@@ -54,7 +54,7 @@ function setcolor(e) {
         r.style.setProperty('--blue', 'red');
         r.style.setProperty('--red', '#0582ff');
 
-        rr.style.backgroundImage = 'repeating-linear-gradient(45deg, rgb(255 255 255 / 90%) 0%, rgb(255 255 255 / 3%) 25%, transparent 25%, rgba(0, 0, 0, 0.07) 50%)'
+        rr.style.backgroundImage = 'repeating-linear-gradient(45deg, rgb(255 255 255 / 90%) 0%, rgb(255 255 255 / 3%) 25%, transparent 25%, rgba(0, 0, 0, 0.10) 50%)'
         rr.style.backgroundSize = '11rem'
 
     } else {
