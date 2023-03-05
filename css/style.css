@@ -294,6 +294,7 @@ body{
 
 }
 .skillbox div {margin: 2rem;height: 20rem;max-width: 22rem;display: flex;justify-content: center;align-items: center;font-size: 10rem;background-color: var(--azure);border-radius: 5%;padding: 5rem;
+cursor: pointer;
 }
 
 .skillmodel{
