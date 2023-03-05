@@ -326,7 +326,7 @@ cursor: pointer;
 
 
 .skilldemobtn{padding: 0 !important;float: left;}
-
+.skillbtn1{z-index: auto !important;}
 .skillright{background-color:#0582ff;height:80vh; width: 3rem;display: flex;flex-direction: column;justify-content: space-between;align-items: center;}
 .circle1,.circle2,.circle3{width: 2rem;height: 2rem;background-color: white;margin: 1rem;border-radius: 50%; cursor: pointer; transition: all linear 500ms;}
 .btn-close{height: 10rem;width: 10rem;border-radius: 50%;border: none;background: #0582ff;cursor: pointer;display: flex;justify-content: center;align-items: center;position: relative;top: -5rem;}
