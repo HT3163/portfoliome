@@ -1,96 +1,81 @@
-const buttons = document.querySelectorAll('button');
+// const buttons = document.querySelectorAll('button');
 const list = document.querySelectorAll('.list');
-// Get the root element
-var r = document.querySelector(':root');
-var rr = document.querySelector('body')
-const m = document.querySelector('.moonget');
-const s = document.querySelector('.sunget');
-var flag = false;
-
-
-var a = document.querySelectorAll('.skillphoto');
-var b = document.querySelectorAll('.dot');
-
-
 
 function activeLink() {
-    list.forEach((item) =>
-    item.classList.remove('active'));
+    list.forEach((item) => item.classList.remove('active'));
     this.classList.add('active');
 }
 
 list.forEach((item) =>
     item.addEventListener('click', activeLink));
 
+window.onscroll = function () { scrollFunction() };
 
-for (let i = 0; i < buttons.length; i++) {
-    const btn = buttons[i]
-
-    btn.addEventListener('click', function (event) {
-        event.target.classList.toggle('active');
-    });
-}
-
-
-
-
+// Get the root element
+let t = document.querySelector('.topHeaderA')
+var getRoot = document.querySelector(':root');
+var getBody = document.querySelector('body')
+const getMoon = document.querySelector('.moonget');
+const getSun = document.querySelector('.sunget');
+t.addEventListener('click', setcolor)
+var flag = false;
 
 function setcolor(e) {
     e.preventDefault();
 
     if (flag == false) {
-        m.style.display = 'none'
-        s.style.display = 'block'
+        getMoon.style.display = 'none'
+        getSun.style.display = 'block'
         flag = true
 
-        r.style.setProperty('--navbackcolor', '#222327');
-        r.style.setProperty('--yellow', 'rgb(255, 0, 0)');
-        r.style.setProperty('--azure', 'rgb(0, 0, 0)');
-        r.style.setProperty('--white', 'rgb(0, 0, 0)');
-        r.style.setProperty('--back', 'rgb(255, 255, 255)');
-        r.style.setProperty('--aliceblue', 'rgb(0, 0, 0)');
-        r.style.setProperty('--backColor', 'white');
-        r.style.setProperty('--textcolor', 'white');
-        r.style.setProperty('--blue', 'red');
-        r.style.setProperty('--red', '#0582ff');
+        getRoot.style.setProperty('--navbackcolor', '#222327');
+        getRoot.style.setProperty('--yellow', 'rgb(255, 0, 0)');
+        getRoot.style.setProperty('--azure', 'rgb(0, 0, 0)');
+        getRoot.style.setProperty('--white', 'rgb(0, 0, 0)');
+        getRoot.style.setProperty('--back', 'rgb(255, 255, 255)');
+        getRoot.style.setProperty('--aliceblue', 'rgb(0, 0, 0)');
+        getRoot.style.setProperty('--backColor', 'white');
+        getRoot.style.setProperty('--textcolor', 'white');
+        getRoot.style.setProperty('--blue', 'red');
+        getRoot.style.setProperty('--red', '#0582ff');
 
-        rr.style.backgroundImage = 'repeating-linear-gradient(45deg, rgb(255 255 255 / 90%) 0%, rgb(255 255 255 / 3%) 25%, transparent 25%, rgba(0, 0, 0, 0.10) 50%)'
-        rr.style.backgroundSize = '11rem'
+        getBody.style.backgroundImage = 'repeating-linear-gradient(45deg, rgb(255 255 255 / 90%) 0%, rgb(255 255 255 / 3%) 25%, transparent 25%, rgba(0, 0, 0, 0.10) 50%)'
+        getBody.style.backgroundSize = '11rem'
 
     } else {
-        s.style.display = 'none'
-        m.style.display = 'block'
+        getSun.style.display = 'none'
+        getMoon.style.display = 'block'
 
         flag = false
 
-        r.style.setProperty('--yellow', 'yellow');
-        r.style.setProperty('--blue', '#0582ff');
-        r.style.setProperty('--azure', 'azure');
-        r.style.setProperty('--white', 'white');
-        r.style.setProperty('--back', 'black');
-        r.style.setProperty('--darkblue', 'darkblue');
-        r.style.setProperty('--aliceblue', 'aliceblue');
-        r.style.setProperty('--backColor', 'rgb(3, 2, 27)');
-        r.style.setProperty('--navbackcolor', '#fff');
-        r.style.setProperty('--textcolor', 'black');
+        getRoot.style.setProperty('--yellow', 'yellow');
+        getRoot.style.setProperty('--blue', '#0582ff');
+        getRoot.style.setProperty('--azure', 'azure');
+        getRoot.style.setProperty('--white', 'white');
+        getRoot.style.setProperty('--back', 'black');
+        getRoot.style.setProperty('--darkblue', 'darkblue');
+        getRoot.style.setProperty('--aliceblue', 'aliceblue');
+        getRoot.style.setProperty('--backColor', 'rgb(3, 2, 27)');
+        getRoot.style.setProperty('--navbackcolor', '#fff');
+        getRoot.style.setProperty('--textcolor', 'black');
 
-        rr.style.backgroundImage = 'repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.05) 25%, transparent 25%, transparent 50%)'
-        rr.style.backgroundSize = 'auto'
+        getBody.style.backgroundImage = 'repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.05) 25%, transparent 25%, transparent 50%)'
+        getBody.style.backgroundSize = 'auto'
 
     }
 
 }
 
 
+// Slider
 
-var index = 0
+var getbtnclose = document.querySelector('.btn-close')
+var getskillhtml = document.querySelector('.skillhtml')
+var a = document.querySelectorAll('.skillphoto');
+var b = document.querySelectorAll('.dot');
 
-
-function closemodel() {
-    var d = document.getElementsByClassName('closemodel');
-    d[0].style.display = 'none'
-    console.log(d)
-}
+getskillhtml.addEventListener('click', addmodel)
+getbtnclose.addEventListener('click', closemodel)
 
 function addmodel() {
     var e = document.getElementsByClassName('closemodel');
@@ -98,11 +83,17 @@ function addmodel() {
     e[0].style.display = 'flex'
 }
 
+function closemodel() {
+    var d = document.getElementsByClassName('closemodel');
+    d[0].style.display = 'none'
+    console.log(d)
+}
+
+var index = 0
 function add(n) {
     index = n
     slider()
 }
-
 function slider() {
     for (var i = 0; i < a.length; i++) {
         a[i].style.display = 'none'
