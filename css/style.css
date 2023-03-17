@@ -634,6 +634,11 @@ textarea {
     }
 
 }
+@media only screen and (min-width: 400px) and (max-width: 430px) {
+    .right-nav {
+        display: none;
+    }
+}
 @media only screen and (min-width: 350px) and (max-width: 400px){
     html {
         font-size: 40%;
