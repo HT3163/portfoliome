@@ -7,7 +7,7 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     transition: all .2s linear;
-    
+    /* border: 1px solid red;    */
 }
 :root {
     --red: rgb(253, 5, 67);
@@ -248,16 +248,32 @@ body{
 .skillbox {display: flex;justify-content: center;flex-wrap: wrap;padding: 10rem;width: 100%;/* background-color: red; */
 
 }
-.skillbox div {margin: 2rem;height: 20rem;max-width: 22rem;display: flex;justify-content: center;align-items: center;font-size: 10rem;background-color: var(--azure);border-radius: 5%;padding: 5rem;
+.skillbox div {cursor: pointer; position: relative;margin: 2rem;height: 20rem;max-width: 22rem;display: flex;justify-content: center;align-items: center;font-size: 10rem;background-color: var(--azure);border-radius: 5%;padding: 5rem;
 }
+.shadow {
+    border-radius: 5%;
+    font-size: 1.5rem;font-weight: 900;
+    position: absolute;
+    top: 0rem;
+    background: rgba(0, 0, 0, 0.212);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: shadowmove 15s linear 1s infinite;
+}
+@keyframes shadowmove {
+    from {background-color: rgba(0, 0, 0, 0.212);height:0%;}
+    to {height:100%;}
+  }
 .skillbox div svg{
     cursor: pointer;
 }
 
 .skillmodel{
     background-color: rgba(0, 0, 0, 0.256);position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: flex;justify-content: center;align-items: center;z-index: 999;font-family: Arial, Helvetica, sans-serif;flex-wrap: wrap;
-    display: none;
-    
+    display: none;   
 }
 
 
@@ -271,10 +287,10 @@ body{
 
 
 .skillmid{background-color: azure;height: 80vh;width: 70%;display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;
-    box-shadow: .3rem .3rem 2rem .1rem rgb(0, 0, 0),
+    /* box-shadow: .3rem .3rem 2rem .1rem rgb(0, 0, 0),
     -.3rem -.3rem 2rem .1rem rgb(255, 255, 255),
     -.2rem -.7rem .3rem .3rem rgb(255, 255, 255),
-    .2rem .5rem .3rem .3rem rgb(0, 0, 0);
+    .2rem .5rem .3rem .3rem rgb(0, 0, 0); */
 }
 
 .skillmid1{max-width: 35rem;margin: clamp(1rem,2rem,3rem);}
@@ -298,13 +314,10 @@ body{
 
 
 
-
-
-
-
 .skillhtml {
     color: #e44d26;
 }
+
 .skillcss {
     font-size: 10rem;
     color: #2965f1;
@@ -634,6 +647,11 @@ textarea {
     }
 
 }
+@media only screen and (min-width: 400px) and (max-width: 430px) {
+    .right-nav {
+        display: none;
+    }
+}
 @media only screen and (min-width: 350px) and (max-width: 400px){
     html {
         font-size: 40%;
@@ -667,6 +685,11 @@ textarea {
     .moonget,.sunget{
         width: 3rem;
         height: 3rem;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 @media only screen and (min-width: 10px) and (max-width: 350px){
@@ -706,10 +729,43 @@ textarea {
         width: 3rem;
         height: 3rem;
     }
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 @media only screen and (min-width: 10px) and (max-width: 300px){
     html{
         font-size: 30%;
+    }
+}
+@media only screen and (min-width: 10px) and (max-width: 270px){
+    html{
+        font-size: 25%;
+    }
+    #contact {
+        min-height: auto;
+    }
+}
+@media only screen and (min-width: 10px) and (max-width: 230px){
+    html{
+        font-size: 20%;
+    }
+}
+@media only screen and (min-width: 10px) and (max-width: 180px){
+    html{
+        font-size: 15%;
+    }
+}
+@media only screen and (min-width: 10px) and (max-width: 150px){
+    html{
+        font-size: 10%;
+    }
+}
+@media only screen and (min-width: 10px) and (max-width: 100px){
+    html{
+        font-size: 5%;
     }
 }
 
