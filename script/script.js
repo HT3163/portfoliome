@@ -9,42 +9,6 @@ function activeLink() {
 list.forEach((item) =>
 item.addEventListener('click', activeLink));
 
-<<<<<<< HEAD
-// window.onscroll = function () { scrollFunction() };
-// console.log(document.body.scrollHeight)
-// function scrollFunction() {
-//     if (document.body.scrollTop <= 500 || document.documentElement.scrollTop <= 500) {
-//         list.forEach((item) => item.classList.remove('active'));
-//         document.querySelector('.indicator').style.display = 'block'
-//         list[0].classList.add('active')
-//         // console.log('hi')
-//     }
-//     if ((document.body.scrollTop > 500 || document.body.scrollTo <=1000) || 
-//     (document.documentElement.scrollTop > 500 || document.documentElement.scrollTo <=1000)) {
-        
-//         document.querySelector('.indicator').style.display = 'none'
-//         list.forEach((item) => item.classList.remove('active'));
-//             // list[1].classList.add('active')
-//         // console.log('hi')
-//     }
-   
-// }
-
-// for (let i = 0; i < buttons.length; i++) {
-//     const btn = buttons[i]
-
-//     btn.addEventListener('click', function (event) {
-//         event.target.classList.toggle('active');
-//     });
-// }
-
-
-
-
-=======
-window.onscroll = function () { scrollFunction() };
-
->>>>>>> f423997eefa5b53200e9686c3e8d85595cb927cd
 // Get the root element
 let t = document.querySelector('.topHeaderA')
 var getRoot = document.querySelector(':root');
