@@ -9,6 +9,7 @@ function activeLink() {
 list.forEach((item) =>
 item.addEventListener('click', activeLink));
 
+<<<<<<< HEAD
 // window.onscroll = function () { scrollFunction() };
 // console.log(document.body.scrollHeight)
 // function scrollFunction() {
@@ -40,6 +41,10 @@ item.addEventListener('click', activeLink));
 
 
 
+=======
+window.onscroll = function () { scrollFunction() };
+
+>>>>>>> f423997eefa5b53200e9686c3e8d85595cb927cd
 // Get the root element
 let t = document.querySelector('.topHeaderA')
 var getRoot = document.querySelector(':root');
