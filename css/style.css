@@ -249,7 +249,7 @@ body{
 .skillbox {display: flex;justify-content: center;flex-wrap: wrap;padding: 10rem;width: 100%;/* background-color: red; */
 
 }
-.skillbox div {cursor: pointer; position: relative;margin: 2rem;height: 20rem;max-width: 22rem;display: flex;justify-content: center;align-items: center;font-size: 10rem;background-color: var(--azure);border-radius: 5%;padding: 5rem;
+.skillbox div {z-index: -1;cursor: pointer; position: relative;margin: 2rem;height: 20rem;max-width: 22rem;display: flex;justify-content: center;align-items: center;font-size: 10rem;background-color: var(--azure);border-radius: 5%;padding: 5rem;
 }
 .shadow {
     border-radius: 5%;
