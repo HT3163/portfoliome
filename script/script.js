@@ -36,6 +36,7 @@ function setcolor(e) {
         getRoot.style.setProperty('--textcolor', 'white');
         getRoot.style.setProperty('--blue', 'red');
         getRoot.style.setProperty('--red', '#0582ff');
+        getRoot.style.setProperty('--shadowColor', 'rgba(255, 255, 255, 0.366)');
 
         getBody.style.backgroundImage = 'repeating-linear-gradient(45deg, rgb(255 255 255 / 90%) 0%, rgb(255 255 255 / 3%) 25%, transparent 25%, rgba(0, 0, 0, 0.10) 50%)'
         getBody.style.backgroundSize = '11rem'
@@ -56,6 +57,7 @@ function setcolor(e) {
         getRoot.style.setProperty('--backColor', 'rgb(3, 2, 27)');
         getRoot.style.setProperty('--navbackcolor', '#fff');
         getRoot.style.setProperty('--textcolor', 'black');
+        getRoot.style.setProperty('--shadowColor', 'rgba(0, 0, 0, 0.366)');
 
         getBody.style.backgroundImage = 'repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.05) 25%, transparent 25%, transparent 50%)'
         getBody.style.backgroundSize = 'auto'
