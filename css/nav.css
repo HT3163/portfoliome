@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     background: var(--clr);
+    z-index: 1;
 }
 .navigation {
     position: fixed;

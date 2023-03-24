@@ -9,6 +9,20 @@ function activeLink() {
 list.forEach((item) =>
 item.addEventListener('click', activeLink));
 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (
+        (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100)
+    ) {
+        document.querySelector('.shadow').style.display = 'block';
+    } else {
+      document.querySelector('.shadow').style.display = 'none'
+  }
+}
+
+
 // Get the root element
 let t = document.querySelector('.topHeaderA')
 var getRoot = document.querySelector(':root');
