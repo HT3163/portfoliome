@@ -264,6 +264,7 @@ body{
     animation: name duration timing-function delay iteration-count direction fill-mode;
     animation: shadowmove 8s linear 1s infinite;
     overflow: hidden;
+    
 }
 @keyframes shadowmove {
     0% { background-color: var(--shadowColor);height:0%;}
@@ -511,12 +512,22 @@ textarea {
     flex-wrap: wrap;
     padding: 5rem;
 }
+.footer-img{
+    height: 20rem;width: 20rem;
+    background-color: var(--white);
+    border-radius: 50%;
+}
 .footer-img img{
-    box-shadow: .3rem .3rem 2rem .1rem rgb(0, 0, 0),
+    /* box-shadow: .3rem .3rem 2rem .1rem rgb(0, 0, 0),
     -.3rem -.3rem 2rem .1rem rgb(255, 255, 255),
     -.2rem -.7rem .3rem .3rem rgb(255, 255, 255),
-    .2rem .5rem .3rem .3rem rgb(0, 0, 0);
+    .2rem .5rem .3rem .3rem rgb(0, 0, 0); */
+    box-shadow: .1rem .1rem .1rem .1rem rgb(156, 156, 156),
+    -.1rem -.1rem 1rem .1rem rgb(136, 136, 136),
+    -.1rem -.1rem .1rem .1rem rgb(154, 154, 154),
+    .1rem .1rem .1rem .1rem rgb(154, 154, 154);
     height: 20rem;
+    width: 20rem;
     background-color: azure;
     border-radius: 100%;
 }
