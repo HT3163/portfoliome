@@ -87,9 +87,13 @@ var getbtnclose = document.querySelector('.btn-close')
 var getskillhtml = document.querySelector('.skillhtml')
 var a = document.querySelectorAll('.skillphoto');
 var b = document.querySelectorAll('.dot');
+var change_href = document.querySelector('.changeHref')
+console.log(change_href)
 
 getskillhtml.addEventListener('click', addmodel)
 getbtnclose.addEventListener('click', closemodel)
+
+
 
 function addmodel() {
     var e = document.getElementsByClassName('closemodel');
@@ -107,6 +111,12 @@ var index = 0
 function add(n) {
     index = n
     slider()
+    if(n==0){
+        change_href.setAttribute('href','https://bright-empanada-bf7284.netlify.app/')
+    }else {
+        change_href.setAttribute('href','https://mcqsdemo.netlify.app/')
+    }
+    console.log(change_href)
 }
 function slider() {
     for (var i = 0; i < a.length; i++) {
@@ -116,5 +126,6 @@ function slider() {
 
     a[index].style.display = 'block'
     b[index].style.background = 'red'
+
 }
 slider()
