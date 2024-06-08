@@ -12,11 +12,12 @@
 }
 
 .main-btn{
+
     z-index: -1;
     width:15rem;
     height:5rem;
     /* background: linear-gradient(to left top, #c32c71 50%, #b33771 50%); */
-    background: linear-gradient(to left top, #ffffff 50%, #efefef 50%);
+    background: linear-gradient(to left top, #ffffff= 50%, #efefef 50%);
     border-style: none;
     color: black;
     font-size: 2rem;
