@@ -10,17 +10,18 @@
     /* border: 1px solid red;    */
 }
 :root {
-    --red: rgb(253, 5, 67);
-    --yellow: yellow;
-    --blue: #0582ff;
-    --azure: azure;
-    --white: white;
-    --black: black;
+    --red: #0582ff;
+    --yellow: rgb(255, 0, 0);
+    --blue: red;
+    --azure: rgb(0, 0, 0);
+    --white: rgb(0, 0, 0);
+    --black: rgb(255, 255, 255);
     --darkblue: darkblue;
-    --aliceblue: aliceblue;
-    --backColor: rgb(3, 2, 27);
-    --navbackcolor: #fff;
-    --shadowColor: rgba(0, 0, 0, 0.366);
+    --aliceblue: rgb(0, 0, 0);
+    --backColor: white;
+    --navbackcolor: #222327;
+    --shadowColor: rgba(255, 255, 255, 0.366);
+    --textcolor: white;
 }
 
 html{
@@ -46,7 +47,8 @@ html::-webkit-scrollbar-track {
 body{
     height: 200vh;
     background: var(--backColor);
-    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.05) 25%, transparent 25%, transparent 50%);
+    background-image: repeating-linear-gradient(45deg, rgb(255 255 255 / 90%) 0%, rgb(255 255 255 / 3%) 25%, transparent 25%, rgba(0, 0, 0, 0.10) 50%);
+    background-size: 11rem;
 }
 .header{
     display: flex;
@@ -68,6 +70,9 @@ body{
     letter-spacing: .5rem;
 }
 .sunget{
+    display: block;
+}
+.moonget{
     display: none;
 }
 

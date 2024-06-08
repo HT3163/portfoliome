@@ -30,7 +30,7 @@ var getBody = document.querySelector('body')
 const getMoon = document.querySelector('.moonget');
 const getSun = document.querySelector('.sunget');
 t.addEventListener('click', setcolor)
-var flag = false;
+var flag = true;
 
 function setcolor(e) {
     e.preventDefault();
