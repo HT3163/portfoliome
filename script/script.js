@@ -7,10 +7,10 @@ function activeLink() {
 }
 
 list.forEach((item) =>
-item.addEventListener('click', activeLink));
+    item.addEventListener('click', activeLink));
 
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (
@@ -18,8 +18,8 @@ function scrollFunction() {
     ) {
         document.querySelector('.shadow').style.display = 'block';
     } else {
-      document.querySelector('.shadow').style.display = 'none'
-  }
+        document.querySelector('.shadow').style.display = 'none'
+    }
 }
 
 
@@ -94,6 +94,7 @@ var change_title_name_skillmodel = document.getElementById('change-title-name-sk
 var img_model_1 = document.getElementById('imgmodel1')
 var img_model_2 = document.getElementById('imgmodel2')
 var changelogo = document.getElementById('changelogo')
+var skill_project_description = document.getElementById('skill-project-description')
 
 
 var a = document.querySelectorAll('.skillphoto');
@@ -103,21 +104,22 @@ var change_href = document.querySelector('.changeHref')
 
 // For HTML PROJECT
 getskillhtml.addEventListener('click', addmodel)
-getskilljs.addEventListener('click',addmodel)
+getskilljs.addEventListener('click', addmodel)
 getbtnclose.addEventListener('click', closemodel)
 
 // For REACT PROJECT
-getskillreact.addEventListener('click',addmodel)
-getskillnode.addEventListener('click',addmodel)
+getskillreact.addEventListener('click', addmodel)
+getskillnode.addEventListener('click', addmodel)
 
 
 
 
 function addmodel(event) {
     // console.log(event.target)
-    if(event.target.id == 'react-react' || event.target.id == 'nodejs-nodejs'){
+    if (event.target.id == 'react-react' || event.target.id == 'nodejs-nodejs') {
         change_title_name_skillmodel.innerText = "Ecommerce App"
-        change_href.setAttribute('href','https://mern-ecommerce-kappa-green.vercel.app/')
+        skill_project_description.innerText = "A robust MERN stack platform featuring secure user authentication, dynamic product catalog, shopping cart, and integrated checkout for a complete online shopping experience."
+        change_href.setAttribute('href', 'https://mern-ecommerce-kappa-green.vercel.app/')
         img_model_1.src = '../img/ecommerceapp.webp'
         img_model_2.src = '../img/chatapp.webp'
         changelogo.innerHTML = `
@@ -292,9 +294,10 @@ function addmodel(event) {
         `
         var e = document.getElementsByClassName('closemodel');
         e[0].style.display = 'flex'
-    }else if(event.target.id == 'html-html' || event.target.id == 'js-js'){
+    } else if (event.target.id == 'html-html' || event.target.id == 'js-js') {
         change_title_name_skillmodel.innerText = "Travel Website"
-        change_href.setAttribute('href','https://bright-empanada-bf7284.netlify.app/')
+        skill_project_description.innerText = "Modern and responsive Travel Agency website built using HTML, CSS, and Vanilla JavaScript with smooth scrolling and interactive UI elements."
+        change_href.setAttribute('href', 'https://bright-empanada-bf7284.netlify.app/')
         img_model_1.src = '../img/travelwebsite.webp'
         img_model_2.src = '../img/mcqswebsite.webp'
         changelogo.innerHTML = `
@@ -363,28 +366,32 @@ function closemodel() {
 
 var index = 0
 function add(n) {
-    
+
     index = n
     slider(index)
 
-    if((change_title_name_skillmodel.innerText == "Ecommerce App" || change_title_name_skillmodel.innerText == "Chat Application")){
-        if(index==0){
-         
+    if ((change_title_name_skillmodel.innerText == "Ecommerce App" || change_title_name_skillmodel.innerText == "Chat Application")) {
+        if (index == 0) {
+
             change_title_name_skillmodel.innerText = "Ecommerce App"
-            change_href.setAttribute('href','https://mern-ecommerce-kappa-green.vercel.app/')
-        }else {
-           
+            skill_project_description.innerText = "A robust MERN stack platform featuring secure user authentication, dynamic product catalog, shopping cart, and integrated checkout for a complete online shopping experience."
+            change_href.setAttribute('href', 'https://mern-ecommerce-kappa-green.vercel.app/')
+        } else {
+
             change_title_name_skillmodel.innerText = "Chat Application"
-            change_href.setAttribute('href','https://mernchatfrontent.vercel.app/')
+            skill_project_description.innerText = "Real-time communication app built with Socket.io, featuring instant messaging with emoji support, file sharing (PDFs/Images), and seamless user interaction."
+            change_href.setAttribute('href', 'https://mernchatfrontent.vercel.app/')
         }
-    }else if(change_title_name_skillmodel.innerText == "Travel Website" || change_title_name_skillmodel.innerText == "Quiz App"){
+    } else if (change_title_name_skillmodel.innerText == "Travel Website" || change_title_name_skillmodel.innerText == "Quiz App") {
         console.log(change_title_name_skillmodel.innerText)
-        if(index==0){
+        if (index == 0) {
             change_title_name_skillmodel.innerText = "Travel Website"
-            change_href.setAttribute('href','https://bright-empanada-bf7284.netlify.app/')
-        }else {
+            skill_project_description.innerText = "Modern and responsive Travel Agency website built using HTML, CSS, and Vanilla JavaScript with smooth scrolling and interactive UI elements."
+            change_href.setAttribute('href', 'https://bright-empanada-bf7284.netlify.app/')
+        } else {
             change_title_name_skillmodel.innerText = "Quiz App"
-            change_href.setAttribute('href','https://mcqsdemo.netlify.app/')
+            skill_project_description.innerText = "Interactive MCQ application for online testing and knowledge assessment, featuring a user-friendly interface and scoring system."
+            change_href.setAttribute('href', 'https://mcqsdemo.netlify.app/')
         }
     }
 
