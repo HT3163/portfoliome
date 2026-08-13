@@ -119,7 +119,7 @@ function addmodel(event) {
     if (event.target.id == 'react-react' || event.target.id == 'nodejs-nodejs') {
         change_title_name_skillmodel.innerText = "Ecommerce App"
         skill_project_description.innerText = "A robust MERN stack platform featuring secure user authentication, dynamic product catalog, shopping cart, and integrated checkout for a complete online shopping experience."
-        change_href.setAttribute('href', 'https://mern-ecommerce-kappa-green.vercel.app/')
+        change_href.setAttribute('href', 'https://mern-ecommerce-ht3163s-projects.vercel.app/')
         img_model_1.src = '../img/ecommerceapp.webp'
         img_model_2.src = '../img/chatapp.webp'
         changelogo.innerHTML = `
@@ -375,7 +375,7 @@ function add(n) {
 
             change_title_name_skillmodel.innerText = "Ecommerce App"
             skill_project_description.innerText = "A robust MERN stack platform featuring secure user authentication, dynamic product catalog, shopping cart, and integrated checkout for a complete online shopping experience."
-            change_href.setAttribute('href', 'https://mern-ecommerce-kappa-green.vercel.app/')
+            change_href.setAttribute('href', 'https://mern-ecommerce-ht3163s-projects.vercel.app/')
         } else {
 
             change_title_name_skillmodel.innerText = "Chat Application"
